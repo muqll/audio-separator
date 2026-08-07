@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madar Audio Separator | عزل الموسيقى</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="app-header">
+            <h2>🎧Audio Separator</h2>
+            <p class="tagline">تطبيق عزل الصوت والموسيقى وإزالة الموسيقى من الفيديوهات</p>
+        </header>
+
+        <div class="upload-box">
+            <input type="file" id="audio-input" accept="audio/*,video/*" hidden>
+            <label for="audio-input" class="upload-label">
+                <div class="circle-icon">
+                    <p id="file-name">اختر ملف صوتي أو فيديو أو اسحبه هنا</p>
+                </div>
+            </label>
+        </div>
+
+        <div class="actions">
+            <button id="process-btn" class="btn-primary">🚀 بدء عملية الفصل</button>
+            <p id="status-text" class="status"></p>
+        </div>
+
+        <div class="player-container">
+            <div class="control-group">
+                <label>🗣️ الصوت البشري (بدون موسيقى):</label>
+                <audio id="vocals-player" controls></audio>
+            </div>
+        </div>
+
+        <!-- أزرار التنزيل -->
+        <div id="download-section" class="download-section" style="display: none;">
+            <a id="download-vocals-btn" href="#" download class="btn-download btn-vocals">
+                🎵 تحميل المقطع الصوتي بدون موسيقى (WAV)
+            </a>
+            <a id="download-video-btn" href="#" download class="btn-download btn-video" style="display: none;">
+                🎬 تحميل الفيديو بدون موسيقى (MP4)
+            </a>
+        </div>
+
+        <footer class="app-footer">
+            <hr class="divider">
+            <p>© 2026 <strong>Madar Software & Gaming</strong>. جميع الحقوق محفوظة.</p>
+            <p class="developer-credit">تطوير وتصميم: <span>مؤمن يوسف</span> 🚀</p>
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

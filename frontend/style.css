@@ -1,0 +1,116 @@
+body {
+    background-color: #0d0f1d;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background: #14172b;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+.app-header h2 {
+    margin: 0 0 5px 0;
+    color: #00d2ff;
+}
+
+.tagline {
+    font-size: 13px;
+    color: #a0a5c0;
+    margin-bottom: 20px;
+}
+
+.upload-box {
+    border: 2px dashed #7928ca;
+    border-radius: 12px;
+    padding: 30px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    background: rgba(121, 40, 202, 0.05);
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #7928ca, #00d2ff);
+    border: none;
+    color: white;
+    padding: 12px 28px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+.btn-primary:hover {
+    transform: scale(1.03);
+}
+
+.player-container {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.control-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+audio {
+    width: 100%;
+}
+
+.download-section {
+    margin-top: 25px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-download {
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btn-vocals { background: #00d2ff; color: #000; }
+.btn-music { background: #7928ca; color: #fff; }
+
+/* الحقوق والملكية */
+.app-footer {
+    margin-top: 30px;
+    font-size: 12px;
+    color: #6c7293;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 15px;
+}
+
+.developer-credit span {
+    color: #00d2ff;
+    font-weight: bold;
+}
+.btn-video { 
+    background: #ff4757; 
+    color: #fff; 
+}
