@@ -67,7 +67,7 @@ processBtn.addEventListener('click', async () => {
         }
     } catch (error) {
         console.error("Error:", error);
-        statusText.textContent = "مازال المطور يعمل على تطوير سيرفر الPaython حاول مرة اخرى لاحقً او تواصل مع المطور .";
+        statusText.textContent = "مازال المطور يعمل على تطوير سيرفر الPython حاول مرة اخرى لاحقاً او تواصل مع المطور .";
         statusText.style.color = "#ff4d4d";
     } finally {
         processBtn.disabled = false;
