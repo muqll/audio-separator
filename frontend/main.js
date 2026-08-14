@@ -67,7 +67,7 @@ processBtn.addEventListener('click', async () => {
         }
     } catch (error) {
         console.error("Error:", error);
-        statusText.textContent = "خطأ في الاتصال بالسيرفر! تأكد أن سيرفر Python شغال.";
+        statusText.textContent = "سيرفر الPaython قيد التطوير بالوقت الحالي، حاول مرة اخرى لاحقاً.";
         statusText.style.color = "#ff4d4d";
     } finally {
         processBtn.disabled = false;
